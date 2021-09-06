@@ -13,16 +13,27 @@ header {
 }
 
 header nav {
-  display: block;
   position: fixed;
+  background-color: white;
+  left: 0;
+  right: 0;
   top: 0;
+  width: 100%;
+}
+
+header nav div {
+  max-width: 1150px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   z-index: 1;
   width: 100%;
-  padding: 1rem 0;
+  padding: .4rem 0;
   background-color: white;
 }
 
-header nav .links {
+header nav div .links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -32,7 +43,7 @@ header nav .links {
           align-items: center;
 }
 
-header nav .links li {
+header nav div .links li {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -40,7 +51,7 @@ header nav .links li {
   text-align: center;
 }
 
-header nav .links a {
+header nav div .links a {
   display: block;
   text-decoration: none;
   font-family: 'Montserrat', sans-serif;
@@ -51,7 +62,7 @@ header nav .links a {
   font-size: 1.2rem;
 }
 
-header nav .socials {
+header nav div .socials {
   width: 100%;
   position: relative;
   display: -webkit-box;
@@ -60,7 +71,7 @@ header nav .socials {
   margin: .5rem auto;
 }
 
-header nav .socials a {
+header nav div .socials a {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -68,11 +79,11 @@ header nav .socials a {
   text-align: center;
 }
 
-header nav .socials a:nth-child(1) > img {
+header nav div .socials a:nth-child(1) > img {
   margin-left: 60%;
 }
 
-header nav .socials a:nth-child(2) > img {
+header nav div .socials a:nth-child(2) > img {
   margin-right: 60%;
 }
 

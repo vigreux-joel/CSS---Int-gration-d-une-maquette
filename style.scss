@@ -12,12 +12,21 @@ header{
     font-size: 0;
 
     nav{
-        display: block;
         position: fixed;
+        background-color: white;
+        left: 0;
+        right: 0;
         top: 0;
+        width: 100%;
+        div{
+        max-width: 1150px;
+        margin: 0 auto;
+        display: flex;
+
+
         z-index: 1;
         width: 100%;
-        padding: 1rem 0;
+        padding: .4rem 0;
         background-color: white;
         .links{
             display: flex;
@@ -56,6 +65,7 @@ header{
             a:nth-child(2) > img{
                 margin-right: 60%;
             }
+        }
         }
     }
     .img-intro {
